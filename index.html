@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quick Maths</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <h1>Cylinder Formula</h1>
+    </div>
+    <div class="first">
+        <div class="title1">
+            <h3>Volume of Cylinder</h3>
+        </div>
+        <div class="voc">
+            <input type="number" id="radius" placeholder="Radius">
+            <br><br>
+            <input type="number" id="height" placeholder="Height">
+            <br><br>
+            <input type="button" onclick="fn1()" value="Submit" id="btn1">
+            <br><br>
+            <p>Volume: <span id="result"></span></p>
+            <img src="Cylinder.jpg" alt="cylinder" class="pic1">
+            <div class="hv">
+                <span id="hv1"></span>
+            </div>
+            <div class="rv">
+                <span id="rv1"></span>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="title2">
+            <h3>Height of Cylinder</h3>
+        </div>
+        <div class="hoc">
+            <input type="number" id="volume" placeholder="Volume">
+            <br><br>
+            <input type="number" id="radius1" placeholder="Radius">
+            <br><br>
+            <input type="button" onclick="fn2()" value="Submit" id="btn1">
+            <br><br>
+            <p>Height: <span id="result1"></span></p>
+            <img src="Cylinder.jpg" alt="cylinder" class="pic2">
+            <div class="vv">
+                <span id="vv1"></span>
+            </div>
+            <div class="rv">
+                <span id="rv2"></span>
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="title3">
+            <h3>Radius of Cylinder</h3>
+        </div>
+        <div class="roc">
+            <input type="number" id="volume1" placeholder="Volume">
+            <br><br>
+            <input type="number" id="height1" placeholder="Height">
+            <br><br>
+            <input type="button" onclick="fn3()" value="Submit" id="btn1">
+            <br><br>
+            <p>Radius: <span id="result2"></span></p>
+            <img src="Cylinder.jpg" alt="cylinder" class="pic3">
+            <div class="vv">
+                <span id="vv2"></span>
+            </div>
+            <div class="hv">
+                <span id="hv2"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="copyright">&copy; 2020 FPCodes</p>
+    </div>
+</body>
+</html>

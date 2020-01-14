@@ -1,0 +1,282 @@
+body, html {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'top top top'
+    'first second third'
+    'bottom1 bottom2 bottom3';
+}
+
+p {
+    font-size: 24px;
+}
+
+.top {
+    grid-area: top;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    width: 100%;
+    background-color: rgb(253, 30, 134);
+    height: 85px;
+    animation-name: gradient;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes gradient {
+    0% {
+        background-color: rgb(253, 30, 134);
+    }
+    50% {
+        background-color: rgb(6, 119, 248);
+    }
+   100% {
+         background-color: rgb(253, 30, 134);
+    }
+}
+
+.first, .second, .third {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+.first {
+    grid-area: first;
+    justify-self: center;
+}
+
+.second {
+    grid-area: second;
+    justify-self: center;
+}
+
+.third {
+    grid-area: third;
+    justify-self: center;
+}
+
+.title1 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.voc {
+    display: none;
+}
+
+.title2 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.hoc {
+    display: none;
+}
+
+.title3 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.roc {
+    display: none;
+}
+
+.title1:hover, .title2:hover, .title3:hover {
+    color: aqua;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#radius, #height, #volume, #radius1, #volume1, #height1 {
+    border: none;
+    width: 215px;
+    height: 27px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+:placeholder-shown {
+    font-size: 14px;
+}
+
+#btn1 {
+    border: none;
+    height: 22px;
+    width: 215px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    transform: scale(1.05);
+    background-color: greenyellow;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#result, #result1, #result2 {
+    font-size: 25px;
+}
+
+.pic1, .pic2, .pic3 {
+    margin-left: 35px;
+}
+
+.hv {
+    position: absolute;
+    margin-top: -96px;
+    margin-left: 125px;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+
+.rv {
+    position: absolute;
+    margin-top: -57px;
+    margin-left: 128px;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+
+.vv {
+    position: absolute;
+    margin-top: -155px;
+    margin-left: 82px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+
+/* ------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    body {
+    font-family: arial;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'top'
+    'first'
+    'second'
+    'third';
+}
+
+.first {
+    grid-area: first;
+    justify-self: center;
+}
+
+.second {
+    grid-area: second;
+    justify-self: center;
+}
+
+.third {
+    grid-area: third;
+    justify-self: center;
+}
+
+.title1 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.voc {
+    display: none;
+}
+
+.title2 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.hoc {
+    display: none;
+}
+
+.title3 {
+    cursor: pointer;
+    width: 250px;
+    font-size: 22px;
+}
+
+.roc {
+    display: none;
+}
+
+.pic1, .pic2, .pic3 {
+    margin-left: 250px;
+    margin-top: -250px;
+    margin-bottom: 100px;
+}
+
+.hv {
+    position: absolute;
+    margin-top: -195px;
+    margin-left: 338px;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+
+.rv {
+    position: absolute;
+    margin-top: -156px;
+    margin-left: 340px;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+
+.vv {
+    position: absolute;
+    margin-top: -255px;
+    margin-left: 290px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.9px;
+}
+}
+
+/* ------------------------------------------------------------- */
+
+.copyright {
+    margin-top: 275px;
+    margin-left: 35px;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
